@@ -16,6 +16,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 
+
+
 const formSchema = z.object({
   PatientName: z.string().min(2).max(50),
   AgeGroup: z.string().min(2).max(50),
@@ -81,6 +83,7 @@ export default function LoginForm() {
                       <FormLabel>Age Group</FormLabel>
                       <FormControl>
                         <Input placeholder="Age Group" {...field} />
+
                       </FormControl>
                       <FormMessage />
                     </FormItem>
